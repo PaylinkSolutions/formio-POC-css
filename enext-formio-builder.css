@@ -22,66 +22,57 @@
   --accentButtons-textColor: #ffffff;
 }
 
-body {
+.formio-form {
   font-family: var(--font-fontFamily), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
-h1 {
+.formio-form h1 {
   font-size: 1.75rem;
   line-height: 2.625rem;
   font-weight: 700;
   color: #012a42;
 }
-
-h2 {
+.formio-form h2 {
   font-size: 1.5rem;
   line-height: 2.25rem;
   font-weight: 700;
   color: #012a42;
 }
-
-h3 {
+.formio-form h3 {
   font-size: 1.375rem;
   line-height: 2rem;
   font-weight: 700;
   color: #012a42;
 }
-
-h4 {
+.formio-form h4 {
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-weight: 700;
   color: #012a42;
 }
-
-h5 {
+.formio-form h5 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
   color: #012a42;
 }
-
-h6 {
+.formio-form h6 {
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-weight: 700;
   color: #012a42;
 }
-
-p {
+.formio-form p {
   line-height: 1.5rem;
 }
-
-small {
+.formio-form small {
   display: block;
   font-size: 0.875rem;
   line-height: 1.313rem;
   margin-bottom: 0.5rem;
 }
-
-.tiny {
+.formio-form .tiny {
   display: block;
   font-size: 0.75rem;
   line-height: 1.185rem;
@@ -105,17 +96,17 @@ small {
   --bs-btn-font-size: 1rem;
   --bs-btn-border-radius: var(--primaryButtons-borderRadius);
 }
-.formio-form .formio-form-group .form-control {
+.formio-form .formio-component.form-group .form-control, .formio-form .formio-component.formio-form-group .form-control {
   border-radius: 10px;
   border: 1px solid #E0E0E0;
   background: #FFFFFF;
   transition: 0.3s;
 }
-.formio-form .formio-form-group .form-control:hover, .formio-form .formio-form-group .form-control:focus {
+.formio-form .formio-component.form-group .form-control:hover, .formio-form .formio-component.form-group .form-control:focus, .formio-form .formio-component.formio-form-group .form-control:hover, .formio-form .formio-component.formio-form-group .form-control:focus {
   border-color: var(--primaryButtons-backgroundColor);
   box-shadow: none;
 }
-.formio-form .formio-form-group label {
+.formio-form .formio-component.form-group label, .formio-form .formio-component.formio-form-group label {
   color: #012A42;
   font-family: var(--font-fontFamily), sans-serif;
   font-size: 14px;
@@ -126,7 +117,7 @@ small {
 .formio-form .card-header {
   background-color: #FFFFFF;
   padding: 20px;
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0 0;
   cursor: default;
 }
 .formio-form .card-header .card-title {
@@ -135,14 +126,6 @@ small {
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
-}
-.formio-form .paylink-hub-content-question {
-  color: #212529;
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
 }
 .formio-form .formio-component-radio {
   display: flex;
