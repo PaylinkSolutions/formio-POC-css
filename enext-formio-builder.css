@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --font-fontFamily: "Mulish";
+  --font-titleColor: #182a58;
+  --primaryButtons-backgroundColor: #673bff;
+  --primaryButtons-backgroundHoverColor: #3d219b;
+  --primaryButtons-borderRadius: 40px;
+  --primaryButtons-borderColor: #673bff;
+  --primaryButtons-borderHoverColor: #3d219b;
+  --primaryButtons-textColor: #ffffff;
+  --secondaryButtons-backgroundColor: #ffffff;
+  --secondaryButtons-backgroundHoverColor: #ffffff;
+  --secondaryButtons-borderColor: #dbdbdb;
+  --secondaryButtons-borderHoverColor: #182a58;
+  --secondaryButtons-borderRadius: 40px;
+  --secondaryButtons-textColor: #182a58;
+  --accentButtons-backgroundColor: #012a42;
+  --accentButtons-backgroundHoverColor: #1b445c;
+  --accentButtons-borderColor: #012a42;
+  --accentButtons-borderHoverColor: #1b445c;
+  --accentButtons-borderRadius: 40px;
+  --accentButtons-textColor: #ffffff;
+}
+
+body {
+  font-family: var(--font-fontFamily), sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 2.625rem;
+  font-weight: 700;
+  color: #012a42;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #012a42;
+}
+
+h3 {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #012a42;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+  color: #012a42;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: #012a42;
+}
+
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  color: #012a42;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+small {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  margin-bottom: 0.5rem;
+}
+
+.tiny {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.185rem;
+}
+
+.formio-form .btn {
+  --bs-btn-color: var(--primaryButtons-textColor);
+  --bs-btn-bg: var(--primaryButtons-backgroundColor);
+  --bs-btn-border-color: var(--primaryButtons-backgroundColor);
+  --bs-btn-hover-color: var(--primaryButtons-textColor);
+  --bs-btn-hover-bg: var(--primaryButtons-borderHoverColor);
+  --bs-btn-hover-border-color: var(--primaryButtons-borderHoverColor);
+  --bs-btn-active-color: var(--primaryButtons-textColor);
+  --bs-btn-active-bg: var(--primaryButtons-borderHoverColor);
+  --bs-btn-active-border-color: var(--primaryButtons-borderHoverColor);
+  --bs-btn-disabled-color: #FFFFFF;
+  --bs-btn-disabled-bg: #828282;
+  --bs-btn-disabled-border-color: #828282;
+  --bs-btn-padding-y: 8px;
+  --bs-btn-padding-x: 50px;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-border-radius: var(--primaryButtons-borderRadius);
+}
+.formio-form .formio-form-group .form-control {
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  background: #FFFFFF;
+  transition: 0.3s;
+}
+.formio-form .formio-form-group .form-control:hover, .formio-form .formio-form-group .form-control:focus {
+  border-color: var(--primaryButtons-backgroundColor);
+  box-shadow: none;
+}
+.formio-form .formio-form-group label {
+  color: #012A42;
+  font-family: var(--font-fontFamily), sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.formio-form .card-header {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 4px 4px 0px 0px;
+  cursor: default;
+}
+.formio-form .card-header .card-title {
+  color: #012A42;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.formio-form .paylink-hub-content-question {
+  color: #212529;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.formio-form .formio-component-radio {
+  display: flex;
+  justify-content: center;
+}
+.formio-form .formio-component-radio .form-check-label::before {
+  display: none;
+}
+.formio-form .formio-component-radio .radio {
+  padding: 0px;
+  width: 100%;
+}
+.formio-form .formio-component-radio .radio input[type=radio] {
+  display: none;
+}
+.formio-form .formio-component-radio .radio input[type=radio]:checked + label::before {
+  background-color: #000;
+}
+.formio-form .formio-component-radio .radio input[type=radio]:checked + label {
+  background-color: #012A42;
+  color: #fff;
+}
+.formio-form .formio-component-radio .radio label {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 60px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #E0E0E0;
+  border-radius: 40px;
+  background: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.formio-form .formio-component-radio .radio label:hover {
+  background-color: #012A42;
+  color: #fff;
+}
+.formio-form .formio-component-radio .radio label:active {
+  background-color: #012A42;
+  color: #fff;
+}
+
+/*# sourceMappingURL=enext-formio-builder.css.map */
